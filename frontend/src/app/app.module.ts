@@ -138,6 +138,7 @@ import { CodeSnippetComponent } from './code-snippet/code-snippet.component'
 import { CodeAreaComponent } from './code-area/code-area.component'
 import { NgxTextDiffModule } from 'ngx-text-diff'
 import { CodeFixesComponent } from './code-fixes/code-fixes.component'
+import { NewFeatureComponent } from './new-feature/new-feature.component'
 
 export function HttpLoaderFactory (http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json')
@@ -200,7 +201,8 @@ export function HttpLoaderFactory (http: HttpClient) {
     FeedbackDetailsComponent,
     CodeSnippetComponent,
     CodeAreaComponent,
-    CodeFixesComponent
+    CodeFixesComponent,
+    NewFeatureComponent
   ],
   imports: [
     BrowserModule,

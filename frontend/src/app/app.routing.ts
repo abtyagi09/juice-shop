@@ -42,6 +42,7 @@ import { DeluxeUserComponent } from './deluxe-user/deluxe-user.component'
 import { AccountingGuard, AdminGuard, LoginGuard } from './app.guard'
 import { NFTUnlockComponent } from './nft-unlock/nft-unlock.component'
 import { ScoreBoardComponent } from './score-board/score-board.component'
+import { NewFeatureComponent } from './new-feature/new-feature.component'
 
 const loadFaucetModule = async () => {
   const module = await import('./faucet/faucet.module')
@@ -229,6 +230,10 @@ const routes: Routes = [
   {
     path: 'bee-haven',
     loadChildren: async () => await loadFaucetModule()
+  },
+  {
+    path: 'new-feature',
+    component: NewFeatureComponent
   },
   // vuln-code-snippet start tokenSaleChallenge
   {
